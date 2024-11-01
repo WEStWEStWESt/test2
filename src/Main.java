@@ -16,16 +16,17 @@ public class Main {
         int f = (~a & b) | (a & ~b);
         int g = ~a & 0x0f;
 
-        for (int i = 0; i < binary.length; i++) {
+        System.out.println("original massive is: " +  "\n");
+        for (int i = 0; i < binary.length + 1; i++) {
             if (i < binary.length / 2) {
                 System.out.print(binary[i] + " * ");
             } else if (i == binary.length / 2) {
                 System.out.println(" ");
             } else {
-                // TODO output second part massive
+                System.out.print(binary[i - 1] + " * ");
             }
         }
-
+        System.out.println(" ");
     }
 
         /*
